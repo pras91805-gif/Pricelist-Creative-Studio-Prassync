@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creative Studio | Prassync | Pricelist</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b0b0b;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+:root {
+  --gold: #d4af37;
+  --muted: #aaa;
+  --panel: #151515;
+}
+
+header {
+  padding: 22px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #292929;
+}
+
+.logo {
+  color: var(--gold);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 14px;
+}
+
+.hero {
+  text-align: center;
+  padding: 85px 20px 65px;
+  background: radial-gradient(ellipse at top, #342a0d, #0b0b0b 65%);
+}
+
+.tag {
+  color: var(--gold);
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: clamp(34px, 7vw, 64px);
+  line-height: 1.15;
+  margin: 18px 0;
+}
+
+h1 span, h2 span {
+  color: var(--gold);
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 550px;
+  margin: 0 auto 28px;
+}
+
+.btn {
+  display: inline-block;
+  background: var(--gold);
+  color: #111;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 55px 7%;
+}
+
+.section-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-head h2 {
+  font-size: 30px;
+}
+
+.section-head p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid #303030;
+  padding: 24px;
+  border-radius: 10px;
+  transition: .2s;
+}
+
+.card:hover {
+  border-color: var(--gold);
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--gold);
+  margin: 14px 0;
+}
+
+.card ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.card li {
+  color: #ccc;
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.card li::before {
+  content: "✓ ";
+  color: var(--gold);
+}
+
+.order {
+  display: block;
+  text-align: center;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.order:hover {
+  background: var(--gold);
+  color: #111;
+}
+
+.note {
+  color: var(--muted);
+  text-align: center;
+  font-size: 13px;
+  margin-top: 24px;
+}
+
+.contact {
+  text-align: center;
+  background: #151515;
+  padding: 55px 20px;
+}
+
+.contact p {
+  color: var(--muted);
+  margin: 12px 0 25px;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  color: #888;
+  font-size: 12px;
+  border-top: 1px solid #292929;
+}
+
+@media (max-width: 760px) {
+  header {
+    padding: 18px 5%;
+  }
+
+  nav a {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 42px 5%;
+  }
+
+  .hero {
+    padding: 65px 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Creative Studio.</div>
+  <nav>
+    <a href="#video">Video</a>
+    <a href="#design">Design</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <div class="tag">CREATIVE • VISUAL • DIGITAL</div>
+  <h1>Bring Your Ideas<br>To <span>Life.</span></h1>
+  <p>
+    Jasa video editing dan desain grafis untuk berbagai
+    kebutuhan personal, kreator, bisnis, dan brand.
+  </p>
+  <a class="btn" href="#video">Lihat Pricelist</a>
+</div>
+
+<section id="video">
+  <div class="section-head">
+    <h2>Video <span>Editing</span></h2>
+    <p>Editing sesuai konsep dan kebutuhan proyekmu.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Basic Editing</h3>
+      <p>Video pendek 15–60 detik</p>
+      <div class="price">Rp25.000+</div>
+      <ul>
+        <li>Cutting dan trimming</li>
+        <li>Transisi sederhana</li>
+        <li>Musik dan teks</li>
+        <li>Format Reels/TikTok</li>
+      </ul>
+      <a class="order" href="#kontak">Pesan Sekarang</a>
+    </div>
+
+    <div class="card">
+      <h3>Cinematic Editing</h3>
+      <p>Video 30 detik–3 menit</p>
+      <div class="price">Rp75.000+</div>
+      <ul>
+        <li>Color grading</li>
+        <li>Cinematic transitions</li>
+        <li>Sinkronisasi musik</li>
+        <li>Storytelling visual</li>
+      </ul>
+      <a class="order" href="#kontak">Pesan Sekarang</a>
+    </div>
+
+    <div class="card">
+      <h3>Professional Editing</h3>
+      <p>Video 3–10 menit</p>
+      <div class="price">Rp150.000+</div>
+      <ul>
+        <li>Alur cerita</li>
+        <li>Color grading detail</li>
+        <li>Sound design</li>
+        <li>Subtitle dan motion graphic</li>
+      </ul>
+      <a class="order" href="#kontak">Pesan Sekarang</a>
+    </div>
+
+    <div class="card">
+      <h3>Premium Project</h3>
+      <p>Proyek khusus dan kompleks</p>
+      <div class="price">Rp350.000+</div>
+      <ul>
+        <li>Film pendek</li>
+        <li>Dokumenter</li>
+        <li>Company profile</li>
+        <li>Video promosi dan aftermovie</li>
+      </ul>
+      <a class="order" href="#kontak">Konsultasi</a>
+    </div>
+  </div>
+</section>
+
+<section id="design">
+  <div class="section-head">
+    <h2>Graphic <span>Design</span></h2>
+    <p>Desain kreatif untuk promosi dan identitas brand.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Social Media</h3>
+      <p>Feed, story, dan konten promosi</p>
+      <div class="price">Rp15.000+</div>
+      <ul>
+        <li>Instagram feed</li>
+        <li>Instagram story</li>
+        <li>Konten promosi</li>
+        <li>Poster digital</li>
+      </ul>
+      <a class="order" href="#kontak">Pesan Sekarang</a>
+    </div>
+
+    <div class="card">
+      <h3>Poster & Banner</h3>
+      <p>Desain promosi dan event</p>
+      <div class="price">Rp30.000+</div>
+      <ul>
+        <li>Poster event</li>
+        <li>Banner usaha</li>
+        <li>Brosur digital</li>
+        <li>Pamflet promosi</li>
+      </ul>
+      <a class="order" href="#kontak">Pesan Sekarang</a>
+    </div>
+
+    <div class="card">
+      <h3>Logo & Branding</h3>
+      <p>Identitas visual bisnis</p>
+      <div class="price">Rp75.000+</div>
+      <ul>
+        <li>Desain logo</li>
+        <li>Warna dan tipografi</li>
+        <li>Identitas visual dasar</li>
+        <li>Mockup logo</li>
+      </ul>
+      <a class="order" href="#kontak">Pesan Sekarang</a>
+    </div>
+
+    <div class="card">
+      <h3>Custom Design</h3>
+      <p>Desain sesuai kebutuhan</p>
+      <div class="price">Rp50.000+</div>
+      <ul>
+        <li>Desain kemasan</li>
+        <li>Menu makanan</li>
+        <li>Katalog produk</li>
+        <li>Undangan digital</li>
+      </ul>
+      <a class="order" href="#kontak">Konsultasi</a>
+    </div>
+  </div>
+
+  <p class="note">
+    Harga merupakan harga awal dan dapat berubah sesuai tingkat kesulitan proyek.
+  </p>
+</section>
+
+<section>
+  <div class="section-head">
+    <h2>Special <span>Packages</span></h2>
+    <p>Paket hemat untuk kebutuhan konten dan bisnis.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Starter Package</h3>
+      <div class="price">Rp50.000</div>
+      <ul>
+        <li>1 video pendek</li>
+        <li>1 desain grafis</li>
+      </ul>
+      <a class="order" href="#kontak">Pilih Paket</a>
+    </div>
+
+    <div class="card">
+      <h3>Content Creator</h3>
+      <div class="price">Rp200.000</div>
+      <ul>
+        <li>4 video pendek</li>
+        <li>4 desain grafis</li>
+      </ul>
+      <a class="order" href="#kontak">Pilih Paket</a>
+    </div>
+
+    <div class="card">
+      <h3>Business Promo</h3>
+      <div class="price">Rp250.000</div>
+      <ul>
+        <li>2 video promosi</li>
+        <li>5 desain grafis</li>
+      </ul>
+      <a class="order" href="#kontak">Pilih Paket</a>
+    </div>
+  </div>
+</section>
+
+<div class="contact" id="kontak">
+  <div class="tag">LET'S WORK TOGETHER</div>
+  <h2>Have a Project in <span>Mind?</span></h2>
+  <p>Diskusikan ide, konsep, dan kebutuhan proyekmu.</p>
+
+  <!-- Ganti nomor di bawah dengan nomor WhatsApp kamu -->
+  <a class="btn"
+     href="https://wa.me/6281225270425?text=Halo%2C%20saya%20ingin%20memesan%20jasa%20kreatif."
+     target="_blank" rel="noopener">
+     Hubungi via WhatsApp
+  </a>
+</div>
+
+
+<footer>
+  © 2026 Creative Studio | Prassync. All Rights Reserved.
+  <br>Video Editing • Graphic Design
+</footer>
+
+</body>
+</html>
